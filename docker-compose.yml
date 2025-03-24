@@ -1,0 +1,19 @@
+version: "3.8"
+
+services:
+  backend:
+    container_name: mosaic-be
+    build:
+      context: .
+      dockerfile: Dockerfile.api
+    ports:
+      - "3001:3001"
+    restart: unless-stopped
+  front:
+    container_name: mosaic-fe
+    build:
+      context: .
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    restart: unless-stopped
