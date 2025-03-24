@@ -6,6 +6,6 @@ export const fetchCompanies = (): Promise<Company[]> => {
       const response = await fetch("http://localhost:3001/companies");
       const data = await response.json();
       resolve(data);
-    }, 600);
+    }, 800);
   });
 };
