@@ -1,54 +1,67 @@
-# React + TypeScript + Vite
+# 🏢 Companies Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **dashboard application** that displays company information in a resizable and draggable widget layout using [React Mosaic](https://github.com/nomcopter/react-mosaic). The dashboard consists of **three widgets** that fetch and display data from a **fake API**, with the ability to **add new windows (left, right, bottom)** and **remove them** dynamically.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 🛠️ Tech Stack
 
-## Expanding the ESLint configuration
+- **React 18**
+- **TypeScript**
+- **TailwindCSS**
+- **React Mosaic**
+- **Vite**
+- **Docker**
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+---
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ["./tsconfig.node.json", "./tsconfig.app.json"],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-});
+## 🚀 Features
+
+- 🏢 Displays information for selected companies.
+- 🔄 Dynamic widget layout with drag & drop (powered by React Mosaic).
+- 📱 Responsive design.
+- 📦 Fully containerized using Docker & Docker Compose.
+
+---
+
+## 🏃🏼‍♂️ Getting Started
+
+### Prerequisites
+
+- [Docker](https://www.docker.com/) & Docker Compose installed
+- (For local dev) Node.js `>=20` and npm
+
+---
+
+## 💻 Development Setup
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/Borys-Andrew/sw-test.git
+cd company-dashboard
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+### 2. Build and Run Docker Containers
 
-```js
-// eslint.config.js
-import reactDom from "eslint-plugin-react-dom";
-import reactX from "eslint-plugin-react-x";
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    "react-x": reactX,
-    "react-dom": reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs["recommended-typescript"].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-});
+```bash
+docker compose up --build
 ```
+
+### 3. Access the App
+
+**Frontend:** [localhost:3000](http://localhost:3000)
+
+---
+
+## 📞 Contact Information
+
+Feel free to reach out for collaboration or job opportunities!
+
+- 📱 **Phone**: +38-073-100-74-63
+- 📧 **Email**: [borysandrew9@gmail.com](mailto:borysandrew9@gmail.com)
+- 🔗 **LinkedIn**: [Andrew Borys](https://www.linkedin.com/in/andrew-borys-233365200/)
+- 💬 **Telegram**: [@BorysAndrew](https://t.me/BorysAndrew)
+- 💻 **GitHub**: [Andrew-Borys](https://github.com/Andrew-Borys)
+- 🌍 **Location**: Lviv, Ukraine
+- 👨‍💻 Open to work in office, hybrid, or remotely.
